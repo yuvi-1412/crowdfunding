@@ -1,0 +1,32 @@
+nav {
+    padding: 0 10%;
+
+    .navbar-toggler-icon {
+        height: 0.75em;
+        width: 0.75em;
+        background-image: url("../images/icon-hamburger.svg");
+        background-position: right bottom;
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    nav {
+        padding: 0 3%;
+        position: relative;
+
+        .navbar-collapse {
+            width: 90%;
+            border-radius: 10px;
+            position: absolute;
+            top: 60px;
+
+            a.nav-link {
+                border-radius: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+body {
+    background-image: url("../images/image-hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Commissioner', sans-serif;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: $font-weight-7;
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    button {
+        border: none;
+        border-radius: 50px;
+        font-weight: $font-weight-7;
+    }
+
+    section {
+        padding: 20% 25% 0;
+
+        header, #overview, main {
+            border-radius: 10px;
+        }
+    }
+
+    .card.out-of-stock {
+        opacity: 0.6;
+    }
+}
+
+.card-head-and-foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url("../images/image-hero-mobile.jpg");
+
+        section {
+            padding: 50% 5% 0;
+        }
+    }
+
+    .card-head-and-foot {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

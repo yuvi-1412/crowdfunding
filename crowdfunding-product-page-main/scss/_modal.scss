@@ -1,0 +1,146 @@
+#modal {
+    .modal-dialog {
+        max-width: 50%;
+    
+        .modal-header {
+            align-items: normal;
+            flex-direction: column;
+            border: none;
+        }
+    
+        .card {
+            display: grid;
+
+            .checkbox {
+                grid-column: 1;
+                grid-row: 1;
+                -webkit-appearance: none;
+                height: 20px;
+                width: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 0 1px $checkbox;
+                position: relative;
+            }
+
+            .checkbox.active:before {
+                height: 15px;
+                width: 15px;
+                border-radius: 10px;
+                content: "";
+                position: absolute;
+                top: 2.5px;
+                left: 2.5px;
+            }
+
+            .card-header {
+                grid-column: 2/4;
+                grid-row: 1;
+                padding: 0;
+                border: none;
+
+                button {
+                    padding: 0;
+                }
+            }
+
+            .remain {
+                grid-column: 4;
+                grid-row: 1;
+                width: max-content;
+                display: flex;
+                justify-content: end;
+
+                span {
+                    margin-right: 0.25rem;
+                    font-weight: $font-weight-7;
+                }
+            }
+
+            .describe {
+                grid-column: 2/4;
+                grid-row: 2;
+            }
+
+            .card-footer {
+                grid-column: 1/5;
+                grid-row: 3;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+
+                input, button {
+                    width: 120px;
+                    border: none;
+                    border-radius: 50px;
+                    outline: none;
+                }
+
+                input {
+                    box-shadow: 0 0 0 1px $input-border;
+                }
+
+                button {
+                    font-weight: $font-weight-7;
+                }
+            }
+
+            .no-reward {
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+
+    #close-modal {
+        height: 30px;
+        width: 30px;
+        background-image: url("../images/icon-close-modal.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: none;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .modal-dialog {
+        max-width: 100% !important;
+
+        .card {
+            justify-items: flex-start;
+
+            .checkbox {
+                width: 10%;
+            }
+
+            .card-header {
+                grid-column: 1/3 !important;
+                grid-row: 1 !important;
+                margin: 0 0 20px 60px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .remain {
+                grid-column: 1 !important;
+                grid-row: 3 !important;
+            }
+
+            .describe {
+                grid-column: 1/3 !important;
+                grid-row: 2 !important;
+            }
+
+            .card-footer {
+                grid-column: 1/3 !important;
+                grid-row: 4 !important;
+                flex-direction: column !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,648 @@
+body {
+    background-image: url("../images/image-hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Commissioner', sans-serif;
+  }
+  
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-weight: 700;
+  }
+  
+  body a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  body button {
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+  }
+  
+  body section {
+    padding: 20% 25% 0;
+  }
+  
+  body section header, body section #overview, body section main {
+    border-radius: 10px;
+  }
+  
+  body .card.out-of-stock {
+    opacity: 0.6;
+  }
+  
+  .card-head-and-foot, main .card .card-heading, main .card .card-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    body {
+      background-image: url("../images/image-hero-mobile.jpg");
+    }
+    body section {
+      padding: 50% 5% 0;
+    }
+    .card-head-and-foot, main .card .card-heading, main .card .card-footer {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  body p {
+    color: #7a7a7a;
+  }
+  
+  body .card-footer {
+    background-color: transparent;
+  }
+  
+  body nav {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(transparent));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+  }
+  
+  body nav .nav-link {
+    color: white;
+  }
+  
+  body nav .nav-link:hover {
+    color: #c8c8c8;
+  }
+  
+  body header {
+    background-color: white;
+  }
+  
+  body header p {
+    color: #7a7a7a;
+  }
+  
+  body header button {
+    background-color: #3cb4ac;
+    color: white;
+  }
+  
+  body header button:hover {
+    background-color: #0a827a;
+  }
+  
+  body header .bookmark {
+    color: #7a7a7a;
+    background-color: #f4f4f4;
+  }
+  
+  body header .bookmark:hover {
+    background-color: #f4f4f4;
+  }
+  
+  body header .bookmark.active {
+    color: #3cb4ac;
+  }
+  
+  body #overview {
+    background-color: white;
+  }
+  
+  body #overview .middle {
+    border-color: #c8c8c8;
+  }
+  
+  body #overview .chart {
+    background-color: #f4f4f4;
+  }
+  
+  body #overview .chart:before {
+    background-color: #3cb4ac;
+  }
+  
+  body main {
+    background-color: white;
+  }
+  
+  body main .card.out-of-stock button {
+    background-color: #7a7a7a;
+    pointer-events: none;
+  }
+  
+  body main .card-heading p {
+    color: #3cb4ac;
+  }
+  
+  body main .card-footer span {
+    color: black;
+  }
+  
+  body main .card-footer button {
+    background-color: #3cb4ac;
+    color: white;
+  }
+  
+  body main .card-footer button:hover {
+    background-color: #0a827a;
+  }
+  
+  body #modal #close-modal {
+    background-color: transparent;
+  }
+  
+  body #modal a {
+    color: black;
+  }
+  
+  body #modal a:hover {
+    color: #3cb4ac;
+  }
+  
+  body #modal .card .checkbox {
+    background-color: transparent;
+  }
+  
+  body #modal .card .checkbox:before {
+    background-color: #3cb4ac;
+  }
+  
+  body #modal .card .card-header {
+    background-color: transparent;
+  }
+  
+  body #modal .card .card-header button {
+    background-color: transparent;
+  }
+  
+  body #modal .card .card-header button:hover {
+    color: #3cb4ac;
+  }
+  
+  body #modal .card .card-header span {
+    color: #3cb4ac;
+  }
+  
+  body #modal .card .remain span {
+    color: black;
+  }
+  
+  body #modal .card .card-header span {
+    color: #3cb4ac;
+  }
+  
+  body #modal .card .card-header p span {
+    color: black;
+  }
+  
+  body #modal .card .card-footer button {
+    background-color: #3cb4ac;
+    color: white;
+  }
+  
+  body #modal .card .card-footer button:hover {
+    background-color: #0a827a;
+  }
+  
+  body #modal .card.out-of-stock .card-header button {
+    pointer-events: none;
+  }
+  
+  body #completeModal button {
+    background-color: #3cb4ac;
+    color: white;
+  }
+  
+  body #completeModal button:hover {
+    background-color: #0a827a;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .navbar-collapse {
+      background-color: white;
+    }
+    .navbar-collapse .nav-link {
+      color: black;
+    }
+    .navbar-collapse .nav-link:hover {
+      color: black;
+      background-color: #c8c8c8;
+    }
+  }
+  
+  nav {
+    padding: 0 10%;
+  }
+  
+  nav .navbar-toggler-icon {
+    height: 0.75em;
+    width: 0.75em;
+    background-image: url("../images/icon-hamburger.svg");
+    background-position: right bottom;
+  }
+  
+  nav .navbar-collapse {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    nav {
+      padding: 0 3%;
+      position: relative;
+    }
+    nav .navbar-collapse {
+      width: 90%;
+      border-radius: 10px;
+      position: absolute;
+      top: 60px;
+    }
+    nav .navbar-collapse a.nav-link {
+      border-radius: 10px;
+    }
+  }
+  
+  #modal .modal-dialog {
+    max-width: 50%;
+  }
+  
+  #modal .modal-dialog .modal-header {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+  }
+  
+  #modal .modal-dialog .card {
+    display: -ms-grid;
+    display: grid;
+  }
+  
+  #modal .modal-dialog .card .checkbox {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 0 1px #3cb4ac;
+            box-shadow: 0 0 0 1px #3cb4ac;
+    position: relative;
+  }
+  
+  #modal .modal-dialog .card .checkbox.active:before {
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+  }
+  
+  #modal .modal-dialog .card .card-header {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    padding: 0;
+    border: none;
+  }
+  
+  #modal .modal-dialog .card .card-header button {
+    padding: 0;
+  }
+  
+  #modal .modal-dialog .card .remain {
+    -ms-grid-column: 4;
+    grid-column: 4;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  
+  #modal .modal-dialog .card .remain span {
+    margin-right: 0.25rem;
+    font-weight: 700;
+  }
+  
+  #modal .modal-dialog .card .describe {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  
+  #modal .modal-dialog .card .card-footer {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  #modal .modal-dialog .card .card-footer input, #modal .modal-dialog .card .card-footer button {
+    width: 120px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+  }
+  
+  #modal .modal-dialog .card .card-footer input {
+    -webkit-box-shadow: 0 0 0 1px #3cb4ac;
+            box-shadow: 0 0 0 1px #3cb4ac;
+  }
+  
+  #modal .modal-dialog .card .card-footer button {
+    font-weight: 700;
+  }
+  
+  #modal .modal-dialog .card .no-reward {
+    padding: 0;
+    border: none;
+  }
+  
+  #modal #close-modal {
+    height: 30px;
+    width: 30px;
+    background-image: url("../images/icon-close-modal.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 1;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .modal-dialog {
+      max-width: 100% !important;
+    }
+    .modal-dialog .card {
+      justify-items: flex-start;
+    }
+    .modal-dialog .card .checkbox {
+      width: 10%;
+    }
+    .modal-dialog .card .card-header {
+      -ms-grid-column: 1 !important;
+      -ms-grid-column-span: 2 !important;
+      grid-column: 1/3 !important;
+      -ms-grid-row: 1 !important;
+      grid-row: 1 !important;
+      margin: 0 0 20px 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    .modal-dialog .card .remain {
+      -ms-grid-column: 1 !important;
+      grid-column: 1 !important;
+      -ms-grid-row: 3 !important;
+      grid-row: 3 !important;
+    }
+    .modal-dialog .card .describe {
+      -ms-grid-column: 1 !important;
+      -ms-grid-column-span: 2 !important;
+      grid-column: 1/3 !important;
+      -ms-grid-row: 2 !important;
+      grid-row: 2 !important;
+    }
+    .modal-dialog .card .card-footer {
+      -ms-grid-column: 1 !important;
+      -ms-grid-column-span: 2 !important;
+      grid-column: 1/3 !important;
+      -ms-grid-row: 4 !important;
+      grid-row: 4 !important;
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: normal !important;
+          -ms-flex-direction: column !important;
+              flex-direction: column !important;
+    }
+  }
+  
+  #completeModal {
+    text-align: center;
+  }
+  
+  #completeModal .modal-dialog {
+    max-width: 40%;
+    height: 100vh;
+  }
+  
+  #completeModal .modal-dialog .modal-header {
+    height: 175px;
+    background-image: url("../images/icon-check.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    border: none;
+  }
+  
+  header {
+    position: relative;
+    text-align: center;
+  }
+  
+  header h3 {
+    font-weight: 700;
+  }
+  
+  header .heading-button {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  header .heading-button button {
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+  }
+  
+  header .heading-button .bookmark {
+    border-radius: 0 50px 50px 0;
+    position: relative;
+  }
+  
+  header .heading-button .bookmark:before {
+    content: "";
+    height: 60px;
+    width: 60px;
+    background-image: url("../images/icon-bookmark.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 0;
+  }
+  
+  header .heading-button .bookmark.active:before {
+    content: "";
+    height: 60px;
+    width: 60px;
+    background-image: url("../images/icon-bookmark-checked.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 0;
+  }
+  
+  header:before {
+    height: 60px;
+    width: 100%;
+    background-image: url("../images/logo-mastercraft.svg");
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    -webkit-transform: translate(-30px, 0);
+            transform: translate(-30px, 0);
+  }
+  
+  #overview .row p {
+    margin: 0;
+    color: #7a7a7a;
+  }
+  
+  #overview .row h2 {
+    font-weight: 700;
+  }
+  
+  #overview .row hr {
+    display: none;
+  }
+  
+  #overview .row .middle {
+    border-style: solid;
+    border-width: 0 1px;
+  }
+  
+  #overview .chart {
+    margin-top: 35px;
+    height: 12px;
+    border-radius: 10px;
+    opacity: 1;
+    position: relative;
+  }
+  
+  #overview .chart:before {
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    z-index: 1;
+  }
+  
+  main p {
+    line-height: 2rem;
+  }
+  
+  main .card {
+    border-radius: 7px;
+  }
+  
+  main .card .card-heading p {
+    font-weight: 500;
+  }
+  
+  main .card .card-footer {
+    border: none;
+  }
+  
+  main .card .card-footer p {
+    margin: 0;
+  }
+  
+  main .card .card-footer p span {
+    font-size: 2.25rem;
+    font-weight: 700;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    header .heading-button .bookmark {
+      height: 0;
+      width: 0;
+    }
+    header .heading-button .bookmark:before {
+      left: -55px;
+    }
+    header .heading-button .bookmark.active:before {
+      left: -55px;
+    }
+    #overview .row {
+      text-align: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+    #overview .row hr {
+      width: 30%;
+      display: block;
+    }
+    #overview .row .middle {
+      border: none;
+    }
+    main .card .card-footer {
+      padding: 0;
+    }
+    main .card .card-footer button {
+      margin-top: 1rem;
+    }
+  }
+  /*# sourceMappingURL=main.css.map */

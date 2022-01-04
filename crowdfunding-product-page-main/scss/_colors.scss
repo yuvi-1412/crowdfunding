@@ -1,0 +1,204 @@
+body {
+    background-color: $body-background;
+
+    p {
+        color: $word-color-2;
+    }
+
+    .card-footer {
+        background-color: transparent;
+    }
+
+    nav {
+        background-image: $nav-background;
+
+        .nav-link {
+            color: $word-color-1;
+        }
+    
+        .nav-link:hover {
+            color: $word-color-1-hover;
+        }
+    }
+    
+    header {
+        background-color: $section-item-background;
+    
+        p {
+            color: $word-color-2;
+        }
+    
+        button {
+            background-color: $button-background;
+            color: $word-color-1;
+        }
+    
+        button:hover {
+            background-color: $button-background-hover;
+        }
+    
+        .bookmark {
+            color: $word-color-2;
+            background-color: $bookmark-background;
+        }
+    
+        .bookmark:hover {
+            background-color: $bookmark-background;
+        }
+
+        .bookmark.active {
+            color: $word-color-3;
+        }
+    }
+    
+    #overview {
+        background-color: $section-item-background;
+
+        .middle {
+            border-color: $middle-border;
+        }
+
+        .chart {
+            background-color: $chart-background;
+        }
+
+        .chart:before {
+            background-color: $chart-background-before;
+        }
+    }
+
+    main {
+        background-color: $section-item-background;
+
+        .card.out-of-stock {
+            button {
+                background-color: $out-of-stock-background;
+                pointer-events: none;
+            }
+        }
+
+        .card-heading {
+            p {
+                color: $word-color-3;
+            }
+        }
+
+        .card-footer {
+            span {
+                color: $word-color-4;
+            }
+
+            button {
+                background-color: $button-background;
+                color: $word-color-1
+            }
+
+            button:hover {
+                background-color: $button-background-hover;
+            }
+        }
+    }
+
+    #modal {
+        #close-modal {
+            background-color: transparent;
+        }
+
+        a {
+            color: $word-color-4;
+        }
+
+        a:hover {
+            color: $word-color-3;
+        }
+
+        .card {
+            .checkbox {
+                background-color: transparent;
+            }
+
+            .checkbox:before {
+                background-color: $checkbox;
+            }
+
+            .card-header {
+                background-color: transparent;
+
+                button {
+                    background-color: transparent;
+                }
+
+                button:hover {
+                    color: $word-color-3;
+                }
+
+                span {
+                    color: $word-color-3;
+                }
+            }
+
+            .remain {
+                span {
+                    color: $word-color-4;
+                }
+            }
+
+            .card-header {
+                span {
+                    color: $word-color-3;
+                }
+
+                p {
+                    span {
+                        color: $word-color-4;
+                    }
+                }
+            }
+
+            .card-footer {
+                button {
+                    background-color: $button-background;
+                    color: $word-color-1;
+                }
+
+                button:hover {
+                    background-color: $button-background-hover;
+                }
+            }
+        }
+
+        .card.out-of-stock {
+            .card-header {
+                button {
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+
+    #completeModal {
+        button {
+            background-color: $button-background;
+            color: $word-color-1;
+        }
+
+        button:hover {
+            background-color: $button-background-hover;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .navbar-collapse {
+        background-color: $navbar-collapse-background;
+
+        .nav-link {
+            color: $word-color-4;
+        }
+    
+        .nav-link:hover {
+            color: $word-color-4;
+            background-color: $nav-link-background;
+        }
+    }
+}
